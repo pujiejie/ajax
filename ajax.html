@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        /*
+            application/x-www-form-urlencoded
+            application/json
+
+
+            http 80
+            https 443
+
+            GET POST PUT DELETE
+            跨域：
+                产生：
+                    同源组策略: 同协议 同域名 同端口
+                    协议 域名 端口 三者有一者不同 就会产生跨域报错
+            CORS: 跨域资源访问
+            http://localhost
+            http://127.0.0.1
+
+
+            url:
+                http://
+            
+            http://localhost/api/license/
+            http://localhost/js/jquery.js
+
+            https://www.baidu.com/
+            https://fanyi.baidu.com/
+
+            后端解决 CORS
+            服务器反向代理
+            JSONP
+                JSONP不是Web标准技术, 黑科技
+                JSONP只支持GET请求
+                JSONP需要前后端共同来完成
+                JSONP不是AJAX
+            
+            标签发请求不会产生跨域 SVIP
+            标签发请求只能发送GET请求
+
+            script标签通过请求获取到的内容 都会被加载为JS
+            link标签拿到东西 都会被解析为CSS
+            img标签
+
+            事先声明一个回调函数, 利用script标签发送一条HTTP请求, 将函数名通过请求参数callback传递给后端
+            后端接收请求后, 解析请求参数callback的参数值, 返回一段执行函数的JS代码, 将需要传递的数据通过实参传递给前端
+
+            jQuery
+
+            options = {
+                type: "GET",
+                data: {
+
+                },
+                contentType: false,
+                processData: false,
+                success() {},
+                error() {},
+                complete() {},
+                url: url,
+                dataType: "jsonp"
+            }
+
+            $.ajax({
+                url: "https://www.yiketianqi.com/free/day",
+                data: {
+                    appid: "11949211",
+                    appsecret: "0RQK9RUP",
+                    unescape: 1
+                },
+                dataType: "jsonp",
+                success(res) {
+                    console.log(res);
+                }
+            })
+
+
+            SVN版本控制系统 集中式版本控制系统
+            Git版本控制系统 分布式版本控制系统
+                指令
+
+            暂存区
+        */
+    </script>
+</head>
+<body>
+</body>
+</html>
